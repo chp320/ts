@@ -18,6 +18,36 @@ public class TestController {
 }
 ```
 
+### @PostMapping
+- 상기 <a href="#getmapping">@GetMapping</a> 과 마찬가지로 HTTP POST 요청을 맵핑하는 어노테이션
+``` java
+@PostMapping("/sample")
+public void TestMethod() {
+    ...
+}
+```
+
+### @RequestBody
+- 일반적으로 메서드에 인자로 사용하며, HttpRequest의 본문 requestBody의 내용을 자바 객체로 매핑하는 역할
+  - 일반적으로 해당 어노테이션 단독으로 사용되지 않음
+- 클라이언트에서 @RequestBody 어노테이션이 있는 메서드를 호출한 경우
+  - DispatcherServlet은 HttpRequest 의 미디어 타입을 확인하고
+  - 타입에 맞는 MessageConverter를 통해서 요청 본문인 'Request Body'를 통채로 변환해서 메서드로 전달함
+- 예를 들어 다음과 같은 HTTP POST 요청이 있는 경우, 요청 본문인 'Request Body' 내 데이터를 변환
+> POST /sample <br>
+> Content-Type: application/json <br>
+> Request Body: {"text":"Add message here"}
+- 아래 예시에서 HTTP 요청 본문에 전달된 JSON 형식 string을 TestData의 인스턴스로 변환
+  - TestData 클래스에는 'text' 를 받을 수 있는 필드가 생성되어 있음
+``` java
+@PostMapping("/sample")
+public ResponseEntiry<Test> testSave(@RequestBody TestData data) {
+    ...
+}
+```
+
+해당하는 어노테이션이 붙어있는 메서드로 클라이언트의 요청이 들어왔을 때, DispatcherServlet에서는 먼저 해당 HttpRequest의 미디어 타입을 확인하고, 타입에 맞는 MessageConverter를 통해 요청 본문인 requestBody를 통째로 변환해서 메서드로 전달해주게 됩니다.
+
 ### @RequestMapping
 - 정의된 URI 패턴으로 요청 인입 시 처리할 수 있는 컨트롤러를 맵핑
   - 아래 예시에서 URI 패턴 "/sample" 요청 시 TestController 클래스 호출할 수 있도록 맵핑
