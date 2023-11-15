@@ -22,6 +22,8 @@
 
 ### log for redis
 - 호출~응답까지 약 0.00001 초
+
+```
 [2023-11-15 23:13:46:732852]  DEBUG 3821 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/redis", parameters={}
 [2023-11-15 23:13:46:732858]  DEBUG 3821 --- [nio-8080-exec-1] o.s.d.r.core.RedisConnectionUtils        : Fetching Redis Connection from RedisConnectionFactory
 [2023-11-15 23:13:46:732859]  DEBUG 3821 --- [nio-8080-exec-1] io.lettuce.core.RedisChannelHandler      : dispatching command AsyncCommand [type=HGETALL, output=MapOutput [output=AsyncCommand [type=HGETALL, output=MapOutput [output={}, error='null'], commandType=io.lettuce.core.protocol.Command], error='null'], commandType=io.lettuce.core.protocol.Command]
@@ -34,9 +36,12 @@
 [2023-11-15 23:13:46:732861]  DEBUG 3821 --- [ioEventLoop-4-1] i.l.core.protocol.RedisStateMachine      : Decode done, empty stack: true
 [2023-11-15 23:13:46:732861]  DEBUG 3821 --- [ioEventLoop-4-1] i.l.core.protocol.CommandHandler         : [channel=0x3cb31b73, /127.0.0.1:51228 -> localhost/127.0.0.1:6379, epid=0x1, chid=0x1] Completing command AsyncCommand [type=HGETALL, output=MapOutput [output={[B@74bb61d0=[B@1b7fe2e, [B@435f7b95=[B@390cae5e, [B@7da0036a=[B@444a4146, [B@2e2dafda=[B@75a756a}, error='null'], commandType=io.lettuce.core.protocol.Command]
 [2023-11-15 23:13:46:732862]  DEBUG 3821 --- [nio-8080-exec-1] o.s.d.r.core.RedisConnectionUtils        : Closing Redis Connection.
+```
 
-# log for non-redis
+### log for non-redis
 - 호출~응답까지 약 0.0000002 초
+
+```
 [2023-11-15 23:21:48:7297592]  DEBUG 3937 --- [p-nio-80-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/session-info", parameters={}
 [2023-11-15 23:21:48:7297593]  DEBUG 3937 --- [p-nio-80-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.springdemo.common.intellijTool.SessionInfoController#sessionInfo(HttpServletRequest)
 [2023-11-15 23:21:48:7297593]  INFO  3937 --- [p-nio-80-exec-3] c.e.s.c.i.SessionInfoController          : session name=email, value=test
@@ -48,4 +53,7 @@
 [2023-11-15 23:21:48:7297594]  DEBUG 3937 --- [p-nio-80-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 [2023-11-15 23:21:48:7297594]  DEBUG 3937 --- [p-nio-80-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["세션 출력"]
 [2023-11-15 23:21:48:7297594]  DEBUG 3937 --- [p-nio-80-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+```
 
+##### 참고 사이트
+https://developer111.tistory.com/69
