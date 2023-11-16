@@ -149,7 +149,7 @@ $ curl 등록한hostname
    
 
 ##### 참고 사이트
-https://linux.how2shout.com/how-to-install-java-on-amazon-linux-2023/
-https://techblog.woowahan.com/2517/
+https://linux.how2shout.com/how-to-install-java-on-amazon-linux-2023
+https://techblog.woowahan.com/2517
 https://m.blog.naver.com/jsky10503/220743935499
 
