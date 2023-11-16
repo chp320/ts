@@ -116,16 +116,12 @@ $ date
 ### 3-3. 호스트네임 등록
 - 현재 정보 확인
 ```
-$ cat /etc/sysconfig/network
-NETWORKING=yes
-NOZEROCONF=yes
+$ uname -n
 ```
-- 상기 정보에 HOSTNAME=호스트네임 형식으로 등록
+- hostname 변경
 ```
-$ sudo vim /etc/sysconfig/network
-NETWORKING=yes
-HOSTNAME=myserver
-NOZEROCONF=yes
+$ sudo vim /etc/hostname
+원하는호스트명등록
 # 서버 재부팅 (이후에 변경내용 확인)
 $ sudo reboot
 ```
@@ -141,9 +137,14 @@ $ sudo vim /etc/hosts
 $ curl 등록한hostname
 ```
 
+- 🙈 주의 🙈
+  - OS버전에 따라 수정해야할 파일이 다름
+    - CentOS 5,6버전은 /etc/sysconfig/network
+    - CentOS 7버전은 /etc/hostname
+   
 
 ##### 참고 사이트
 https://linux.how2shout.com/how-to-install-java-on-amazon-linux-2023/
 https://techblog.woowahan.com/2517/
-
+https://m.blog.naver.com/jsky10503/220743935499
 
