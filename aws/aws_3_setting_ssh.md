@@ -80,8 +80,70 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ### 3-1. 자바 설치
 - 여기서는 자바8 설치할꺼임
 ```
+# Amazon Linux 2 AMI인 경우 (AL2)
 $ sudo yum install -y java-1.8.0-openjdk-devel.x86_64
+# Amazon Linux 2023 AMI인 경우 (AL2023)
+$ sudo dnf install java-1.8.0-amazon-corretto-devel
 ```
-- 설치 완료 후, 인스턴스의 java 버전을 8로 변경 (현재 기본 자바버전은 7임)
+- 참고로 AL2와 AL2023의 차이는.. AL2는 yum 명령어를 사용하며, AL2023은 dnf 명령어를 사용해서 install 관리를 한다고 한다.
+  - 더불어 AL2는 python2.7 기반인데 AL2023은 python3 기반이라고 함
+- 자바 버전 확인
+```
+$ java -version
+```
+- 자바 버전 변경: 만일 자바8이 아니라 다른 버전도 함께 설치되어 있는 경우, 아래 명령어를 통해 쉽게 버전 변경이 가능함
+```
+$ alternatives --config java
+```
+  - 상기 명령어 수행하면 설치된 자바 버전이 넘버링되어 나타나며, 변경코자 하는 버전의 번호를 입력하면 해당 버전으로 변경됨
+
+### 3-2. 타임존 변경
+- EC2 서버 기본 타임존은 UTC로 한국 시간대로 변경 필요
+- 아래 명령어를 수행하면 현재 UTC로 지정된 것을 확인할 수 있음
+```
+$ cat /etc/localtime
+TZif2UTCTZif2UTC
+UTC0
+```
+- 하기 명령어를 차례로 수행
+```
+$ sudo rm /etc/localtime
+$ sudo ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+# 변경된 타임존 확인
+$ date
+```
+
+### 3-3. 호스트네임 등록
+- 현재 정보 확인
+```
+$ cat /etc/sysconfig/network
+NETWORKING=yes
+NOZEROCONF=yes
+```
+- 상기 정보에 HOSTNAME=호스트네임 형식으로 등록
+```
+$ sudo vim /etc/sysconfig/network
+NETWORKING=yes
+HOSTNAME=myserver
+NOZEROCONF=yes
+# 서버 재부팅 (이후에 변경내용 확인)
+$ sudo reboot
+```
+- 호스트 주소 검색 시 가장 먼저 확인하는 /etc/hosts 에 변경한 hostname 등록
+  - hostname이 /etc/hosts 에 등록되지 않아 발생한 장애는 아래 우와기술블로그 참고
+```
+$ sudo vim /etc/hosts
+
+# /etc/hosts 파일에 방금 등록한 hostname 추가
+127.0.0.1 등록한hostname
+
+# 아래 명령어로 정상 등록 여부 확인
+$ curl 등록한hostname
+```
+
+
+##### 참고 사이트
+https://linux.how2shout.com/how-to-install-java-on-amazon-linux-2023/
+https://techblog.woowahan.com/2517/
 
 
