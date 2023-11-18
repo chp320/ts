@@ -77,7 +77,9 @@ OpenJDK 64-Bit Server VM Homebrew (build 17.0.9+0, mixed mode, sharing)
 - (Mac/Gradle 기준) Settings > Build,Execution,Deployment > Build Tools > Gradle 메뉴
   - Gradle JVM 이 방금 설치 진행한 jdk 17이상으로 설정되어 있는지 확인. 아니라면 드롭박스 선택해서 17 버전 이상을 선택하자!
 - 다시 빌드 진행하고 성공 확인하자!!
+```
   BUILD SUCCESSFUL in 21s
+```
 - 성공 했다 흑흑 ㅠㅠ
 
 
