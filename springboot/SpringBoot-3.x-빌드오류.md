@@ -23,6 +23,7 @@ A problem occurred configuring root project 'springboot-developer'.
 - 우선 "No matching" 으로 시작하는 로그를 보면 현재 스프링부트 버전을 알 수 있다. (3.1.5)
 - 엇.. 그런데 Java 17 어쩌고 적혀 있다. 나는 지금 버전이 11인데??
 - 구글링해보니 스프링부트3.0부터는 Java 17부터 지원된다고 한다. 음.. 17버전을 깔아보자.
+  - 참고로 2.7 버전은 jdk 8 버전 이상 (https://docs.spring.io/spring-boot/docs/2.7.x/reference/html/getting-started.html#getting-started.system-requirements)
 ```
 # 지금은 11 버전이다 ㅠㅠ
 $ java -version
@@ -31,7 +32,7 @@ Java(TM) SE Runtime Environment 18.9 (build 11.0.15.1+2-LTS-10)
 Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.15.1+2-LTS-10, mixed mode)
 ```
 
-### 참고 - brew 이용해서 설치 진행
+### 💎참고 - brew 이용해서 설치 진행
 ```
 # openjdk17 버전이 있는지 확인
 $ brew search openjdk@17
