@@ -2,6 +2,7 @@
 
 ## 현상
 - 스프링부트 3.1.5 에서 프로젝트 생성 후 IntelliJ가 자동으로 빌드 중 무려 600줄에 달하는 방대한 오류를 뱉었다.
+- 😱☠️😱☠️😱☠️😱☠️😱☠️😱
 ```
 A problem occurred configuring root project 'springboot-developer'.
 > Could not resolve all files for configuration ':classpath'.
@@ -83,6 +84,10 @@ OpenJDK 64-Bit Server VM Homebrew (build 17.0.9+0, mixed mode, sharing)
 - 성공 했다 흑흑 ㅠㅠ
 
 
+##### 참고 사이트
+https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Release-Notes
+
+https://jojoldu.tistory.com/698
 
 
 
