@@ -21,6 +21,16 @@
 <img src="https://miro.medium.com/v2/0*CzE1_rn0FyFjRJW4.jpg" alt="object relational mapping" />
 <img src="https://github.com/chp320/ts/assets/47440517/66afe870-7845-446e-89ed-d864c9dce92d" />
 
+<hr>
+
+## 엔티티?
+### 정의
+- 엔티티(entity)는 DB의 테이블과 맵핑되는 객체
+- 실제로는 자바 객체 그 자체이지만 "DB 테이블과 직접 연결(일치)" 하는 특징 존재
+- @Entity 어노테이션으로 물리 테이블과 맵핑
+
+
+
 
 ##### 참고 사이트
 
