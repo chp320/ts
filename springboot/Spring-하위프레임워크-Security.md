@@ -29,7 +29,7 @@
 <img src="https://github.com/chp320/ts/assets/47440517/7a331345-5cf9-421a-8abf-7e7d28d90f46" />
 
 1. 사용자가 폼에 아이디/패스워드 입력 후 전송 - HTTPServletRequest
-   1-1. AuthenticationFilter 가 전송된 값(아이디/패스워드)에 대해 유효성 검사 수행
+   - AuthenticationFilter 가 전송된 값(아이디/패스워드)에 대해 유효성 검사 수행
 2. 유효성 검사 끝나면 실제 구현체인 UsernamePasswordAuthenticationToken을 생성
 3. 2에서 생성한 '인증용 객체'인 UsernamePasswordAuthenticationToken을 전달
 4. AuthenticationProvider에 전달
