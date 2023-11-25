@@ -98,6 +98,8 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 ##### 참고 사이트
 https://github.com/spring-projects/spring-security/issues/13609
 
+https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/config/annotation/web/builders/HttpSecurity.html#authorizeHttpRequests()
+
 https://github.com/shinsunyoung/springboot-developer/issues/5
 
 https://sennieworld.tistory.com/109
