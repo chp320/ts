@@ -7,7 +7,7 @@
 ## 오류 로그
 - 교재에서 안내한 코드는 아래와 같다. <a href="https://github.com/shinsunyoung/springboot-developer/blob/8a0841c499848f03828932fdd0e21bc1660d79f5/chapter8/src/main/java/me/shinsunyoung/springbootdeveloper/config/WebSecurityConfig.java#L30" target="_blank">교재 소스 보기(탭 이동 안됨 주의)</a>
 
-[이동하기](https://github.com/shinsunyoung/springboot-developer/blob/8a0841c499848f03828932fdd0e21bc1660d79f5/chapter8/src/main/java/me/shinsunyoung/springbootdeveloper/config/WebSecurityConfig.java#L30)
+![이동하기](https://github.com/shinsunyoung/springboot-developer/blob/8a0841c499848f03828932fdd0e21bc1660d79f5/chapter8/src/main/java/me/shinsunyoung/springbootdeveloper/config/WebSecurityConfig.java#L30)
 
 
 ```
