@@ -32,6 +32,9 @@
 3. JWT 방식
 
 
+### Note.
+- 스프링 시큐리티에서 사용자 인증/인가 정보는 UserDetails 객체에 담음 -> 이 클래스를 implements 해서 override 하면 됨
+
 
 ### 아이디/패스워드 기반 폼 로그인 인증 절차 예시
 <img src="https://github.com/chp320/ts/assets/47440517/7a331345-5cf9-421a-8abf-7e7d28d90f46" />
