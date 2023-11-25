@@ -24,6 +24,7 @@
 4. JWT - JSON Web Token
    * JWT 로 인증을 위해서는 HTTP request 헤더 내 [ key: Authorization, value: 'Bearer + JWT 토큰값' ] 넣어 전송 필요
    * JWT 구조 - 헤더(header)/내용(payload)/서명(signature)
+  
 ![image](https://github.com/chp320/ts/assets/47440517/d6cf5bb3-07a1-446e-9439-91fd85cea9fc)
   
      1) 헤더
