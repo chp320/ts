@@ -54,6 +54,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
     }
 ```
 
+#### 요약하면 아래와 같다.
 ```
 - authorizeRequests -> authorizeHttpRequests 로 변경
 - requestMatchers()에 인수로 넘긴 항목을 AntPathRequestMatcher()에 단건으로 넘겨 객체 생성
