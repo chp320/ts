@@ -47,9 +47,11 @@
        - 보통 엑세스 토큰의 유효기간은 '짧게', 리프레시 토큰의 유효기간은 '길게' 설정하여 안정성 높임 
    * 토큰 발급 flow
 ![image](https://github.com/chp320/ts/assets/47440517/4aabfe52-a323-449b-a7fc-d4f1b72d2055)
+
+## 알아두기
+1. JWT 토큰을 만드려면 이슈 발급자(issuer), 비밀키(secret_key) 설정 필수!
+   - 서버 설정 파일(application.yml)에 설정
   
-   * ㅇㅇㅇ
-   * ㅇㅇㅇ
 
 
 
