@@ -12,6 +12,8 @@
 
 <a href="https://google.com" target="_blank">새창에서 열려랴 얍</a>
 
+<www.naver.com>{: target="_blank"}
+
 
 ```
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'filterChain' defined in class path resource [com/skyfox83/springbootdeveloper/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
