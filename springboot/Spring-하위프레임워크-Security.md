@@ -25,6 +25,14 @@
 <img src="https://github.com/chp320/ts/assets/47440517/bf6a7e78-ab1a-497e-aa24-08aac08ad4ec" />
 
 
+
+### 스프링 시큐리티 - 인가 방식
+1. 폼 로그인 방식 (기본)
+2. OAuth2.0 방식
+3. JWT 방식
+
+
+
 ### 아이디/패스워드 기반 폼 로그인 인증 절차 예시
 <img src="https://github.com/chp320/ts/assets/47440517/7a331345-5cf9-421a-8abf-7e7d28d90f46" />
 
