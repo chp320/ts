@@ -23,6 +23,8 @@
   - 권한 부여 처리를 위임해 접근 제어 결정을 쉽게하는 '접근 결정 관리자' 역할 수행
 * SecurityContextHolder
   - 인증 완료된 후 Authentication 객체를 저장하는 곳
+* UserDetails
+  - 사용자 인증 정보와 권한 정보를 저장하는데 사용되며, 해당 인터페이스를 implements 하여 구현
 * 그 외 필터에 대한 설명은 아래 도표 참고
 <img src="https://github.com/chp320/ts/assets/47440517/bf6a7e78-ab1a-497e-aa24-08aac08ad4ec" />
 
