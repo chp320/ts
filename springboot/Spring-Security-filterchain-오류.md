@@ -7,6 +7,9 @@
 ## 오류 로그
 - 교재에서 안내한 코드는 아래와 같다. <a href="https://github.com/shinsunyoung/springboot-developer/blob/8a0841c499848f03828932fdd0e21bc1660d79f5/chapter8/src/main/java/me/shinsunyoung/springbootdeveloper/config/WebSecurityConfig.java#L30" target="_blank">교재 소스 보기(탭 이동 안됨 주의)</a>
 
+[이동하기](https://github.com/shinsunyoung/springboot-developer/blob/8a0841c499848f03828932fdd0e21bc1660d79f5/chapter8/src/main/java/me/shinsunyoung/springbootdeveloper/config/WebSecurityConfig.java#L30)
+
+
 ```
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'filterChain' defined in class path resource [com/skyfox83/springbootdeveloper/config/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: This method cannot decide whether these patterns are Spring MVC patterns or not. If this endpoint is a Spring MVC endpoint, please use requestMatchers(MvcRequestMatcher); otherwise, please use requestMatchers(AntPathRequestMatcher).
 ```
