@@ -16,4 +16,4 @@
   4) 클라이언트 자격증명 승인 타입
 
 ## 권한 부여 코드 승인 타입??
-![인증 flow](image.png)
+![image](https://github.com/chp320/ts/assets/47440517/521c28ea-73ce-4600-aa4f-76f43ef364dd)
