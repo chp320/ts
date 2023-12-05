@@ -51,3 +51,8 @@ spring:
 ![image](https://github.com/chp320/ts/assets/47440517/b3980409-5d87-4daf-b5bf-9eb19218ecfd)
 
 
+
+##### 참고 사이트
+https://www.inflearn.com/questions/741994/intellij-jdk11-oauth로그인-에러-문제입니다
+
+
