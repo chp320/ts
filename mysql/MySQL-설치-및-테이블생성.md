@@ -8,6 +8,11 @@ brew install mysql
 ```
 brew services start mysql
 ```
+* root 비밀번호 로그인
+  - 아래 명령어 입력 후 별도 비밀번호 입력 필요
+```
+  mysql -u root -p
+```
 * root 비밀번호 없이 로그인
   - brew 설치 시 root 패스워드 없이 완료됨 (We've installed your MySQL database without a root password.)
 ```
