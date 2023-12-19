@@ -59,3 +59,10 @@ desc [table명] ;
 ```
 <img width="699" alt="image" src="https://github.com/chp320/ts/assets/47440517/0ae03049-1272-49f3-aef7-28b21d49df7d">
 
+## 3. 확인하기
+- 데몬 실행 확인
+```
+brew services list
+```
+<img width="514" alt="image" src="https://github.com/chp320/ts/assets/47440517/9271d580-b221-4e68-bb6a-d0fc3e34a88d">
+
