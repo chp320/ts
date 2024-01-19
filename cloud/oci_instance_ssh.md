@@ -37,4 +37,14 @@ $ ssh opc@xxx.xxx.xxx.xxx -i ~/.ssh/oci-key
 $ sudo vi /etc/motd
 ```
 
+
+##### reference
+https://boring-notes.tistory.com/m/entry/OCI-오라클-클라우드-1-가입평생-무료-사용하기
+
+https://boring-notes.tistory.com/entry/GCP-구글클라우드플랫폼-VM머신간-접속-설정하기
+
+https://a-researcher.tistory.com/93
+
+
+
 끝.
