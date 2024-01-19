@@ -22,6 +22,7 @@ $ cat ~/.ssh/oci-key.pub
 
 ## 3. ssh 접속
 ### OCI에서는 기본 계정으로 opc 를 부여하며, 해당 계정으로 ssh 접속 필요!
+#### https://docs.oracle.com/en/cloud/cloud-at-customer/occ-get-started/log-vm-using-ssh.html#GUID-D45A516E-09EA-4BF6-A5C3-ABD6EAB8CA3D
 ### 명령어 양식: ssh opc@{IP_ADDRESS} -i {KEY}
 ``` bash
 $ ssh opc@xxx.xxx.xxx.xxx -i ~/.ssh/oci-key
@@ -31,7 +32,7 @@ $ ssh opc@xxx.xxx.xxx.xxx -i ~/.ssh/oci-key
 ### SSH 접속 시, 웰컴메시지 노출을 위해서는 /etc/motd 파일을 수정하면 된다.
 ### 단, 사용자 계정이 opc 인데 상기 파일은 root 소유라 sudo 명령어 필요함
 ### 아스키 문자로 꾸미고 싶다면 하기 url에서 '아스키 아트'를 생성하면 됨
-### https://ko.rakko.tools/tools/68/
+#### https://ko.rakko.tools/tools/68/
 ``` bash
 $ sudo vi /etc/motd
 ```
